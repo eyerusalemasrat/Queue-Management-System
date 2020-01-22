@@ -1,0 +1,54 @@
+.container{
+		background-color: lightgray;
+		margin: 100px;
+		margin-left: 400px;
+		width: 500px;
+		padding: 40px;
+}
+
+
+#title{
+	
+	position: absolute;
+	top: 170px;
+	left: 650px;
+	color: green;
+	
+}
+
+#token{
+
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+#number{
+
+	margin-left: 220px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+.divspan{
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+#attending{
+	margin-right: 250px;
+}
+
+.divbutton{
+  margin-left: -10px;
+	margin-top: 50px;
+}
+
+button{
+	  padding: 4px 5px;
+	  border: none;
+	  cursor: pointer;
+	  opacity: 0.9;
+	  margin-left:150px;
+}
+

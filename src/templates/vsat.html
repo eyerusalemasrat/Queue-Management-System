@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block style_base %}
+	<link rel="stylesheet" type="text/css" href="/static/generate.css">
+{% endblock %}
+
+{% block script %}
+    <script src="/static/index.js" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+        <div class="container">
+			<p>
+			  <img src="/static/ethiotel.jpg"height="42" width="140">
+			  <span id="title">your Token Number is Generated successfully</span>
+			</p>
+			<p id="token">Token Number</p>
+			<button id="number">001</button>
+			<div class="divspan">
+				<span id="attending">Attending VSAT</span>
+				<span id="position">your position:001</span>
+			</div>
+			<div class="divbutton">
+				<button id="print" onClick="location.href='../welcome'">print</button>
+				<button id="cancel"  onClick="location.href='../home'">cancel</button>
+			</div>
+	</div>
+{% endblock  %}

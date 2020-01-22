@@ -1,0 +1,38 @@
+
+
+{% extends 'base.html' %}
+
+{% block style_base %}
+<link rel="stylesheet" type="text/css" href="/static/register.css">
+{% endblock %}
+{% block script %}
+<script src="/static/index.js" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+<form class="container" action="{% url 'register-user' %}" method="post">
+	{% csrf_token %}
+    <p>
+		<img src="/static/ethiotel.jpg"height="42" width="140">
+	     <span id="title">Regstration Form</span>
+	     </p>
+	     <p>Name<input id="namereg" type="" name="name"></p>
+	     <p>PhoneNumber<input id="phonereg" type="" name="phone_number"></p>
+	     <p>Resdential
+			<label class="containerlabel">
+				  <input value="residential" type="radio" checked="checked" name="type">
+				  <span class="checkmark"></span>
+			</label>
+		</p><p>Enterprise
+            <label class="containerlabel">
+                  <input value="enterprise" type="radio" name="type">
+                  <span class="checkmark"></span>
+            </label>
+        </p>
+
+
+    <button type="submit">submit</button>
+</form>
+{% endblock  %}
+
+
+

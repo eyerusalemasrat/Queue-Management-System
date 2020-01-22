@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block style_base %}
+	<link rel="stylesheet" type="text/css" href="/static/keyaccount.css">
+{% endblock %}
+{% block content %}
+	<form class="container1" action="{% url 'key' %}" method="post">
+	{% csrf_token %}
+		<p>
+		  <img src="/static/ethiotel.jpg"height="42" width="140">
+	      <span id="title">Key Account</span>
+	    </p>
+		<label class="container">M2M Business
+		  <input type="radio" checked="checked" name="type" value="M2M Business">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Gota Services
+		  <input type="radio" name="type" value="Gota Services">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Broadband
+		  <input type="radio" name="type" value="Broadband">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Hybrid
+		  <input type="radio" name="type" value="Hybrid">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Bill Collection
+		  <input type="radio" name="type" value="Bill Collection">
+		  <span class="checkmark"></span>
+		</label>
+		<div class="divbutton">
+		 <button id="generateToken" id="generateToken" onClick="location.href='../generatenumber'">generateToken</button>
+		</div>
+	</form>
+{% endblock  %}

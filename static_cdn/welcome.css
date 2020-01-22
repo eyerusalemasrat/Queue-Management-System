@@ -1,0 +1,32 @@
+.container{
+		background-color: lightgray;
+		margin: 200px;
+		margin-left: 500px;
+		width: 500px;
+		padding: 40px;
+}
+
+
+
+#title{
+	
+	position: absolute;
+	top: 270px;
+	left: 800px;
+	color: green;
+	
+}
+
+table {
+  margin-top: 70px;
+  width:100%;
+}
+table, th, td {
+  border: 1px solid green;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+

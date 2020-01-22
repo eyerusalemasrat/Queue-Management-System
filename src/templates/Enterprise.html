@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block style_base %}
+	  <link rel="stylesheet" type="text/css" href="/static/Enterprise.css">
+{% endblock %}
+{% block script %}
+    <script src="/static/index.js" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+
+        <form class="container1" action="{% url 'enterprise' %}" method="post">
+	{% csrf_token %}
+			<p>
+			  <img src="/static/ethiotel.jpg" height="50" width="140">
+			  <span id="title">Enterprise</span>
+			</p>
+		   <div class="divlabel">
+				<label class="container">keyAccount
+				  <input type="radio" checked="checked" name="type" id="keyaccount" value="keyaccount">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="container" id="leftcheckmark">SOHO/SME
+				  <input type="radio" name="type" id="soho"  value="SOHO">
+				  <span  class="checkmark"></span>
+				</label>
+		   </div>
+		   <div class="divbutton">
+			 <button id="submit" onClick='myFunction()'>submit</button>
+		   </div>
+		</form>
+
+{% endblock  %}

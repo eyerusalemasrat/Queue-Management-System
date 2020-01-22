@@ -1,0 +1,108 @@
+body{
+   background-image: url("tel.jpg");
+   background-color:red;
+}
+
+.container{
+		background-color: lightgray;
+		margin: 100px;
+		margin-left: 400px;
+		width: 400px;
+		padding: 40px;
+}
+
+input{
+  padding: 5px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#namereg{
+	margin-left: 153px;
+}
+
+#phonereg{
+	margin-left: 100px;
+}
+
+#title{
+	
+	position: absolute;
+	top: 250px;
+	left: 780px;
+	color: green;
+	
+	
+}
+
+button{
+  margin-left: 330px;
+  padding: 4px 5px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+
+
+.radio{
+	margin-left: 200px;
+}
+
+.containerlabel {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containerlabel input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: -20px;
+  left: 260px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.containerlabel:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+	
+.containerlabel input:checked ~ .checkmark {
+  background-color: gray;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containerlabel input:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.containerlabel .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block style_base %}
+	<link rel="stylesheet" type="text/css" href="/static/Residential.css">
+{% endblock %}
+{% block script %}
+    <script src="/static/index.js" type="text/javascript"></script>
+{% endblock %}
+{% block content %}
+	<form class="container1" action="{% url 'residential' %}" method="post">
+	{% csrf_token %}
+		<p>
+		  <img src="/static/ethiotel.jpg"height="42" width="140">
+		  <span id="title">Residential</span>
+		</p>
+		<label class="container">Business Mobile
+		  <input type="radio" checked="checked" name="type" id="Business" value="Business_Mobile">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Broadband
+		  <input type="radio" name="type" id="broadband" value="Broadband">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Bill Collection
+		  <input type="radio" name="type" value="Bill_Collection">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Hybrid
+		  <input type="radio" name="type" value="Hybrid">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">FixedLine
+		  <input type="radio" name="type" value="FixedLine">
+		  <span class="checkmark"></span>
+		</label>
+		<label class="container">Personal
+		  <input type="radio" name="type" value="Personal">
+		  <span class="checkmark"></span>
+		</label>
+	    <img id="warning" src="/static/warning.jpeg"height="80" width="100">
+	    <p id="calltel">if service not found <br>call 994 click cancel</p>
+	    <div class="divbutton">
+<!--			<button id="cancel" onClick="location.href='../home'">cancel</button>-->
+			<button onclick='residential()' id="generateToken">generateToken</button>
+	    </div>
+	</form>
+{% endblock  %}
+
