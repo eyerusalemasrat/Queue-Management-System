@@ -27,7 +27,7 @@ def register(request):
     user.phoneNumber = request.POST['phone_number']
     user.type = request.POST['type']
 
-    if user.name != "" and user.phoneNumber == user.phoneNumber:
+    if user.name != "" and len(user.phoneNumber) == 10:
         user.save()
         if user.type == 'residential':
             return render(request, 'Residential.html')
