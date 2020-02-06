@@ -6,7 +6,7 @@ def home_view(request,*args,**kwargs):
     print(args,kwargs)
     print(request)
     return render(request,"home.html", {})
-
+    
 def Residential_view(request,*args,**kwargs):
     print(args, kwargs)
     print(request)
@@ -31,11 +31,6 @@ def welcome_view(request,*args,**kwargs):
     print(args, kwargs)
     print(request)
     return render(request,"welcome.html", {})
-
-def generatenumber_view(request,*args,**kwargs):
-    print(args, kwargs)
-    print(request)
-    return render(request,"generateNumber.html", {})
 
 def generatenumber_view(request,*args,**kwargs):
     print(args, kwargs)

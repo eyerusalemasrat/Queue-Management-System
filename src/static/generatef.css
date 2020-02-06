@@ -1,0 +1,82 @@
+.container{
+    background-color: lightgray;
+    margin: 100px;
+    margin-left: 400px;
+    width: 500px;
+    padding: 40px;
+    border-radius: 25px;
+
+
+}
+
+
+#title{
+
+position: absolute;
+top: 170px;
+left: 650px;
+color: green;
+font: bold 14px/1 "helvetica neue", helvetica, arial, sans-serif;
+
+}
+
+#token{
+
+text-align: center;
+margin-top: 30px;
+
+}
+
+#number{
+
+margin-left: 220px;
+margin-top: 10px;
+padding: 20px;
+}
+
+#cancel{
+background: #1aff2d;
+border-top: 1px solid #009e73;
+border-right: 1px solid #00805e;
+border-bottom: 1px solid #001a13;
+border-left: 1px solid #00805e;
+box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+color: #001a13;
+font: bold 15px/1 "helvetica neue", helvetica, arial, sans-serif;
+margin-Top: 20px;
+margin-left:130px;
+text-shadow: 0 -1px 1px #1e2d4d;
+width: 115px;
+padding:10px;
+}
+#print{
+background: #1aff2d;
+border-top: 1px solid #009e73;
+border-right: 1px solid #00805e;
+border-bottom: 1px solid #001a13;
+border-left: 1px solid #00805e;
+box-shadow: inset 0 1px 10px 1px #5c8bee, 0 1px 0 #1d2c4d, 0 6px 0 #1f3053, 0 8px 4px 1px #111111;
+color: #001a13;
+font: bold 15px/1 "helvetica neue", helvetica, arial, sans-serif;
+margin-Top: 20px;
+margin-left:130px;
+text-shadow: 0 -1px 1px #1e2d4d;
+width: 115px;
+padding:10px;
+}
+
+.divspan{
+margin-left: 30px;
+margin-top: 30px;
+}
+
+#attending{
+margin-right: 150px;
+}
+
+.divbutton{
+margin-left: 70px;
+margin-top: 50px;
+}
+
+

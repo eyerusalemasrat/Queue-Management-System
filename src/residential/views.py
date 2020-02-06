@@ -15,7 +15,7 @@ def index(request, *args, **kwargs):
     print(request)
     return render(request, "residential.html", my_context)
 
-
+x=0
 def Residential(request):
     user = residential()
     user.type = request.POST['type']
@@ -24,6 +24,7 @@ def Residential(request):
     print(user.type)
 
     if user.type == 'Business_Mobile':
+        
         return render(request, 'Business_Mobile.html')
     elif user.type == 'Broadband':
         return render(request, 'Broadband.html')

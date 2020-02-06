@@ -30,7 +30,7 @@ urlpatterns = [
     path('residential/', include('residential.urls')),
     path('Enterprise/', include('Enterprise.urls')),
     path('keyAccount/', include("key.urls")),
-    path('sohom/', include('soho.urls')),
+    path('soho/', include('soho.urls')),
     path('welcome/',welcome_view),
     path('generatenumber/',generatenumber_view),
     path('admin/', admin.site.urls),

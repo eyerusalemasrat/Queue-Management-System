@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block style_base %}
-	<link rel="stylesheet" type="text/css" href="/static/Residential.css">
+	<link rel="stylesheet" type="text/css" href="/static/residentialf.css">
 {% endblock %}
 {% block script %}
     <script src="/static/index.js" type="text/javascript"></script>
@@ -39,8 +39,9 @@
 	    <img id="warning" src="/static/warning.jpeg"height="80" width="100">
 	    <p id="calltel">if service not found <br>call 994 click cancel</p>
 	    <div class="divbutton">
-<!--			<button id="cancel" onClick="location.href='../home'">cancel</button>-->
+			
 			<button onclick='residential()' id="generateToken">generateToken</button>
+			<button id="cancel" onClick="location.href='../home'">cancel</button>
 	    </div>
 	</form>
 {% endblock  %}
